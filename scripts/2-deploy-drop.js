@@ -2,17 +2,18 @@ import { AddressZero } from "@ethersproject/constants";
 import sdk from "./1-initialize-sdk.js";
 import { readFileSync } from "fs";
 
+
 (async () => {
     try {
         const editionDropAddress = await sdk.deployer.deployEditionDrop({
             // The collection's name, ex. CryptoPunks
-            name: "SamDAO Membership",
+            name: "juneDAO Membership",
 
             // A description for the collection.
-            description: "A DAO for fans of Samu.",
+            description: "A DAO for the month of june.",
 
             // The image that will be held on our NFT! The fun part :).
-            image: readFileSync("scripts/assets/smile.jpg"),
+            image: readFileSync("scripts/assets/me.png"),
 
             // We need to pass in the address of the person who will be receiving the proceeds from sales of nfts in the contract.
             // We're planning on not charging people for the drop, so we'll pass in the 0x0 address

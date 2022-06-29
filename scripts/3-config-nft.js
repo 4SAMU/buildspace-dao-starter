@@ -1,14 +1,14 @@
 import sdk from "./1-initialize-sdk.js";
 import { readFileSync } from "fs";
 
-const editionDrop = sdk.getEditionDrop("0x53101Aff57C4E678087dd52c70457B6204C68B4C");
+const editionDrop = sdk.getEditionDrop("0x6ab173281A745c2304545A156434525C5f4399fB");
 
 (async () => {
     try {
         await editionDrop.createBatch([
             {
-                name: "expensive smile",
-                description: "This NFT will give you access to samuDAO!",
+                name: "nice month to smile",
+                description: "This NFT will give you access to juneDAO!",
                 image: readFileSync("scripts/assets/smile.jpg"),
             },
         ]);

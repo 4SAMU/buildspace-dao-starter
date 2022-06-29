@@ -6,7 +6,7 @@ import sdk from "./1-initialize-sdk.js";
         // Deploy a standard ERC-20 contract.
         const tokenAddress = await sdk.deployer.deployToken({
             // What's your token's name? Ex. "Ethereum"
-            name: "samuDAO Governance Token",
+            name: "juneDAO Governance Token",
             // What's your token's symbol? Ex. "ETH"
             symbol: "SAMU",
             // This will be in case we want to sell our token,
